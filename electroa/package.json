@@ -1,0 +1,24 @@
+{
+  "name": "electroa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.6.0",
+    "next": "^10.0.8",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.5.1",
+    "react-countdown": "^2.3.1",
+    "react-dom": "^17.0.1",
+    "react-slick": "^0.28.1"
+  }
+}
