@@ -9,8 +9,11 @@ const cookieParser = require("cookie-parser");
 var cors = require("cors");
 
 const AppError = require('./utils/appError');
-const productRouter = require('./routes/productRoutes');
+// const productRouter = require('./routes/productRoutes');
 const categoryRouter = require('./routes/categoryRoutes')
+const authRouter = require('./routes/authRoutes');
+const productRouter = require('./routes/productRoutes');
+const cloudinaryRouter = require('./routes/cloudinaryRouter');
 
 const app = express();
 
@@ -52,8 +55,10 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
-app.use("/api/product", productRouter);
+app.use("/api/products", productRouter);
 app.use("/api/category", categoryRouter);
+app.use("/api/cloudinary", cloudinaryRouter);
+app.use("/api", authRouter)
 
 app.all("*", (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));

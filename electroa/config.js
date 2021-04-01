@@ -11,6 +11,7 @@ export const DOMAIN = publicRuntimeConfig.PRODUCTION
     ? publicRuntimeConfig.DOMAIN_DEVELOPMENT 
     : publicRuntimeConfig.DOMAIN_PRODUCTION;
 
+export const REACT_APP_REGISTER_REDIRECT_URL = publicRuntimeConfig.REDIRECT_URL
 
 // export const FB_APP_ID = publicRuntimeConfig.FB_APP_ID
 // export const DISQUS_SHORTNAME = publicRuntimeConfig.DISQUS_SHORTNAME;
